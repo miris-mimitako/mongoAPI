@@ -1,0 +1,35 @@
+[
+  {
+    "level": "ERROR",
+    "message": "Failed to connect to external service XYZ",
+    "resourceId": "payment-service/instance-01",
+    "timestamp": "2025-05-25T10:00:00Z",
+    "traceId": "trace-abc-123",
+    "spanId": "span-def-456",
+    "commit": "a1b2c3d",
+    "metadata": {
+      "retry_attempt": 3,
+      "target_url": "http://xyz-service.com/api"
+    }
+  },
+  {
+    "level": "INFO",
+    "message": "User logged in successfully",
+    "resourceId": "auth-service/instance-02"
+  },
+  {
+    "level": "WARN",
+    "message": "Low disk space warning",
+    "resourceId": "monitoring-agent/host-alpha",
+    "timestamp": "2025-05-25 09:30:15.123+00:00",
+    "metadata": {
+      "disk_path": "/var/log",
+      "free_space_gb": 1.5
+    }
+  },
+  {
+    "message": "Processing complete for item 789",
+    "resourceId": "worker-pool/node-beta",
+    "timestamp": "2025-05-25T10:15:00Z"
+  }
+]
